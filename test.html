@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO List</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .todo-container {
+            padding: 20px;
+            max-width: 350px;
+            margin: 0 auto;
+            background-color: #bebebe
+        }
+        
+        .list-item__remove-btn {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="todo-container">
+        <h1>TODO List</h1>
+        <input type="text" id="todoInput">
+        <button id="addBtn">Add</button>
+        <ul id="todoItems"></ul>
+    </div>
+    <script src="dist/libs.js"></script>
+    <script src="dist/app.js"></script>
+</body>
+
+</html>

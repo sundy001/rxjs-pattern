@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "commonjs",
+        "allowJs": true,
+        "sourceMap": true,
+        "jsx": "react"
+    },
+    "exclude": [
+        "node_modules"
+    ],
+    "compileOnSave": false
+}
