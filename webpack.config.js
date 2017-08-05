@@ -3,7 +3,10 @@ const webpack = require('webpack');
 
 module.exports = {
     entry: {
-        app: './src/app.ts',
+        sample1: './src/sample1/sample1.ts',
+        sample2: './src/sample2/sample2.ts',
+        sample3: './src/sample3/sample3.ts',
+        sample4: './src/sample4/sample4.ts',
         libs: ['rxjs'],
     },
     output: {
@@ -19,6 +22,7 @@ module.exports = {
         loaders: [
             // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
             { test: /\.tsx?$/, loader: 'ts-loader' },
+            { test: /\.html$/, loader: 'file-loader', query: { name: '[name].[ext]' } },
         ]
     },
     plugins: [

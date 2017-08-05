@@ -1,3 +1,4 @@
+import './sample1.html';
 import { Observable } from 'rxjs/Rx';
 
 const itmeListEl = document.querySelector('#todoItems');
