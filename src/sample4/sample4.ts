@@ -24,7 +24,6 @@ const toSkipData$ = <T>(event$: Observable<any>, dataStreamFactory: () => Observ
     ;
 };
 
-
 const actionBtnEl = document.getElementById('actionBtn');
 
 const actionBtnClick$ = Observable.fromEvent(actionBtnEl, 'click');

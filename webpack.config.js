@@ -7,6 +7,7 @@ module.exports = {
         sample2: './src/sample2/sample2.ts',
         sample3: './src/sample3/sample3.ts',
         sample4: './src/sample4/sample4.ts',
+        sample5: './src/sample5/sample5.ts',
         libs: ['rxjs'],
     },
     output: {
