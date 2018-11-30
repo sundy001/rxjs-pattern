@@ -38,15 +38,14 @@ const namesData = Observable.of('start')
     .flatMap(() => namesRequest$);
 
 const suggestion$ = nameInputKeypress$
-    .combineLatest(namesData, (input: string, { names }: { names: string[] }) => 
+    .combineLatest(namesData, (input: string, { names }: { names: string[] }) =>
         Observable
             .from(names)
             .filter((name) => name.toLowerCase().indexOf(input.toLowerCase()) !== -1)
             .take(5)
             .toArray()
     )
-    .concatAll()
-    .startWith(null);
+    .concatAll();
 
 suggestion$.subscribe(
     (data) => {

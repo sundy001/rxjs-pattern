@@ -11,6 +11,7 @@ const toSkipData$ = <T>(event$: Observable<any>, dataStreamFactory: () => Observ
         // if data stream is not complete, omit the emit
         .filter(() => isCompleted)
         .flatMap(() => {
+            console.log('dataStreamFactory');
             // mark the flag, to prevent other emit come
             isCompleted = false;
 
